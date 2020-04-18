@@ -1,5 +1,5 @@
-import { Injectable, OnInit } from '@angular/core';
-import { of as observableOf, Observable } from 'rxjs';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { PeriodsService } from './periods.service';
 import { OutlineData, VisitorsAnalyticsData } from '../data/visitors-analytics';
 import { AnalyticsService } from '../../services/analytics.service';

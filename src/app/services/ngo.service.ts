@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/observable';
 
 
 import { Ngo } from '../models/ngo.model';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({ providedIn: 'root' })
 export class NgoService {

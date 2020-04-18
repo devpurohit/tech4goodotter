@@ -13,11 +13,11 @@ export class AnalyticsService {
         'February',
         'March',
         'April',
-        'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];;
+        'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     constructor(private http: HttpClient) { }
 
     addLog(ip: string) {
-        console.info(ip)
+        console.info(ip);
         const date = new Date();
         const log: Analytics = {
             ip, month: this.months[date.getMonth().toString()],
