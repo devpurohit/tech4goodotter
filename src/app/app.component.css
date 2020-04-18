@@ -1,0 +1,16 @@
+::ng-deep nb-auth nb-card-header {
+    display: none !important;
+  }
+
+::ng-deep  .forgot-password {
+    display: none !important;
+}
+
+::ng-deep  .another-action {
+    display: none !important;
+}
+
+
+::ng-deep  .sub-title {
+    display: none !important;
+}
