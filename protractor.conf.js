@@ -15,7 +15,7 @@ exports.config = {
         }
     },
     directConnect: true,
-    baseUrl: 'http://localhost:80/',
+    baseUrl: 'http://admin.otterbyt4g.org:80/',
     framework: 'jasmine',
     jasmineNodeOpts: {
         showColors: true,

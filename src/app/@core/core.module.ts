@@ -111,7 +111,7 @@ export const NB_CORE_PROVIDERS = [
                     class: NbAuthSimpleToken,
                     key: 'token', // this parameter tells where to look for the token
                 },
-                baseEndpoint: 'http://localhost:80',
+                baseEndpoint: 'http://admin.otterbyt4g.org:80',
                 login: {
                     // ...
                     endpoint: '/api/auth/login',

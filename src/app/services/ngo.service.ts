@@ -13,12 +13,12 @@ export class NgoService {
     constructor(private http: HttpClient) { }
 
     addNgo(ngo: Ngo) {
-        this.http.post<any>('http://localhost:80/api/ngo/add', ngo).subscribe(data => {
+        this.http.post<any>('http://admin.otterbyt4g.org:80/api/ngo/add', ngo).subscribe(data => {
         });
     }
 
     getNgo(): Observable<any> {
-        return this.http.get<any>('http://localhost:80/api/ngo/getAll');
+        return this.http.get<any>('http://admin.otterbyt4g.org:80/api/ngo/getAll');
     }
 
 }
