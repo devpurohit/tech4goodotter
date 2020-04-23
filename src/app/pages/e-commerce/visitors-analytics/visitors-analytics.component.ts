@@ -11,7 +11,7 @@ import { forkJoin } from 'rxjs';
     templateUrl: './visitors-analytics.component.html',
 })
 export class ECommerceVisitorsAnalyticsComponent implements OnDestroy, OnInit {
-    private alive = false;
+    public alive = false;
 
     pieChartValue: number;
     chartLegend: { iconColor: string; title: string }[];

@@ -11,7 +11,7 @@ export class ECommerceComponent implements OnInit {
     constructor(private http: HttpClient, private analyticsService: AnalyticsService) { }
 
     ngOnInit() {
-        this.http.get('http://api.ipify.org/?format=json').subscribe((res: any) => {
+        this.http.get('https://cors-anywhere.herokuapp.com/http://api.ipify.org/?format=json').subscribe((res: any) => {
             this.analyticsService.addLog(res.ip);
         });
     }
