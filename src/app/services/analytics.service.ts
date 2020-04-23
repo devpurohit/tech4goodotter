@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Subject } from 'rxjs';
-import { Observable } from 'rxjs/observable';
+import { Observable } from 'rxjs';
 
 
 import { Analytics } from '../models/analytics.model';
