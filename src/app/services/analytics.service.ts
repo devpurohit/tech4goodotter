@@ -24,26 +24,26 @@ export class AnalyticsService {
             year: date.getFullYear().toString(),
         };
 
-        this.http.post<any>('http://localhost:3000/api/log/add', log).subscribe(data => {
+        this.http.post<any>('http://localhost:80/api/log/add', log).subscribe(data => {
         });
     }
 
     getLog(year: string): Observable<any> {
         let params = new HttpParams();
         params = params.append('year', year);
-        return this.http.get<any>('http://localhost:3000/api/log/getAll', { params });
+        return this.http.get<any>('http://localhost:80/api/log/getAll', { params });
     }
 
     getOuterLine(year: string): Observable<any> {
         let params = new HttpParams();
         params = params.append('year', year);
-        return this.http.get<any>('http://localhost:3000/api/log/getOuterLine', { params });
+        return this.http.get<any>('http://localhost:80/api/log/getOuterLine', { params });
     }
 
     getChartData(year: string): Observable<any> {
         let params = new HttpParams();
         params = params.append('year', year);
-        return this.http.get<any>('http://localhost:3000/api/log/getChart', { params });
+        return this.http.get<any>('http://localhost:80/api/log/getChart', { params });
     }
 
 }
